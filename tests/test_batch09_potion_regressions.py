@@ -136,6 +136,28 @@ def test_smoke_bomb_cannot_be_used_in_boss_combat():
     assert helper.game_state.terminal_state is not GameTerminalState.COMBAT_ESCAPE
 
 
+def test_smoke_bomb_is_not_offered_in_boss_combat():
+    helper = create_test_helper()
+    player = helper.create_player()
+    boss = SlimeBoss()
+    combat = helper.start_combat([boss])
+    assert helper.game_state.current_combat is not None
+    helper.game_state.current_combat.combat_type = CombatType.BOSS
+    potion = SmokeBomb()
+    player.potions.append(potion)
+
+    combat._build_player_action()
+
+    request = cast(InputRequestAction, _first_input_request(helper))
+    potion_actions = [
+        action
+        for option in request.options
+        for action in option.actions
+        if isinstance(action, UsePotionAction)
+    ]
+    assert all(action.potion is not potion for action in potion_actions)
+
+
 def test_blessing_of_the_forge_is_common():
     assert BlessingOfTheForge.rarity == RarityType.COMMON
 

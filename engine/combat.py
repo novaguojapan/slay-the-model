@@ -246,12 +246,19 @@ class Combat(Localizable):
         # 3. Build InputRequestAction for potions
         from actions.combat import UsePotionAction
         for potion in game_state.player.potions:
-            if potion.can_be_used_actively:
-                potion_target = game_state.player if getattr(potion, "target_type", None) == TargetType.SELF else None
-                options.append(Option(
-                    name=LocalStr(potion.info()),
-                    actions=[UsePotionAction(potion=potion, target=potion_target)]
-                ))
+            if not getattr(potion, "can_be_used_actively", True):
+                continue
+
+            potion_target_type = getattr(potion, "target_type", None)
+            potion_target = game_state.player if potion_target_type == TargetType.SELF else None
+            can_use_targets = [potion_target] if potion_target is not None else list(enemies)
+            if not potion.can_use(can_use_targets):
+                continue
+
+            options.append(Option(
+                name=LocalStr(potion.info()),
+                actions=[UsePotionAction(potion=potion, target=potion_target)]
+            ))
             
         # 4. Add option to end turn
         options.append(Option(
