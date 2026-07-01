@@ -223,3 +223,6 @@
 
 "Juggernaut" :{"Name":"Juggernaut","Damage":5,"Energy":2,"Type":"Power","Rarity":"Rare","Owner":"Ironclad","Info":"Whenever you gain <green>Block</green>, deal <red>5 damage</red> to a random enemy."},
 "Juggernaut +" :{"Name":"Juggernaut +","Damage":7,"Energy":2,"Type":"Power","Rarity":"Rare","Upgraded":True,"Owner": "Ironclad","Info":"Whenever you gain <green>Block</green>, deal <red>5 damage</red> to a random enemy."},
+
+"Hellraiser" :{"Name":"Hellraiser","Energy":1,"Type":"Power","Rarity":"Rare","Owner":"Ironclad","Info":"Whenever you draw a card containing \"Strike\" it is played against a random enemy."},
+"Hellraiser +" :{"Name":"Hellraiser +","Energy":1,"Type":"Power","Rarity":"Rare","Upgraded":True,"Owner":"Ironclad","Info":"Whenever you draw a card containing \"Strike\" it is played against a random enemy."},
