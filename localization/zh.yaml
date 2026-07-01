@@ -891,6 +891,9 @@ cards:
     Headbutt:
       name: 头槌
       description: 造成 {damage} 点伤害。将弃牌堆中的一张牌放到抽牌堆顶。
+    Hellraiser:
+      name: 地狱使者
+      description: 每当你抽到一张包含“打击”的牌时，对一个随机敌人打出它。
     Hemokinesis:
       name: 御血术
       description: 失去 2 点生命值。造成 {damage} 点伤害。
@@ -1997,6 +2000,9 @@ powers:
   HeatsinksPower:
     name: 散热片
     description: 每当你打出一张能力牌，抽 {amount} 张牌。
+  HellraiserPower:
+    name: 地狱使者
+    description: 每当你抽到一张包含“打击”的牌时，对一个随机敌人打出它。
   HelloWorldPower:
     name: 你好世界
     description: 在你的回合开始时，将 1 张随机普通牌加入手牌。

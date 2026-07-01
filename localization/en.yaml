@@ -921,6 +921,9 @@ cards:
     Headbutt:
       name: Headbutt
       description: Deal {damage} damage. Put a card from your discard pile on top of your draw pile.
+    Hellraiser:
+      name: Hellraiser
+      description: Whenever you draw a card containing "Strike" it is played against a random enemy.
     Hemokinesis:
       name: Hemokinesis
       description: Lose 2 HP. Deal {damage} damage.
@@ -2032,6 +2035,9 @@ powers:
   HeatsinksPower:
     name: Heatsinks
     description: Whenever you play a Power, draw {amount} card(s).
+  HellraiserPower:
+    name: Hellraiser
+    description: Whenever you draw a card containing "Strike" it is played against a random enemy.
   HelloWorldPower:
     name: Hello World
     description: At the start of your turn, add 1 random common card to your hand.
