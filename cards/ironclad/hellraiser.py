@@ -1,5 +1,5 @@
 """
-Ironclad Rare Power card - Hellraiser
+Ironclad Common Power card - Hellraiser
 """
 from engine.runtime_api import add_action, add_actions
 
@@ -17,7 +17,7 @@ class Hellraiser(Card):
     """Whenever you draw a card containing "Strike" it is played against a random enemy."""
 
     card_type = CardType.POWER
-    rarity = RarityType.RARE
+    rarity = RarityType.COMMON
 
     base_cost = 1
 
