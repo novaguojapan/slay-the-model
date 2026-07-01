@@ -14,6 +14,7 @@ from powers.definitions.invincible import InvinciblePower
 from powers.definitions.frail import FrailPower
 from powers.definitions.magnetism import MagnetismPower
 from powers.definitions.mayhem import MayhemPower
+from powers.definitions.hellraiser import HellraiserPower
 from powers.definitions.panache import PanachePower
 from powers.definitions.sadistic_nature import SadisticNaturePower
 from powers.definitions.the_bomb import TheBombPower
@@ -79,6 +80,7 @@ __all__ = [
     "FrailPower",
     "MagnetismPower",
     "MayhemPower",
+    "HellraiserPower",
     "PanachePower",
     "SadisticNaturePower",
     "TheBombPower",
