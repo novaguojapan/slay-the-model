@@ -823,6 +823,10 @@ cards:
       name: 残暴
       description: 回合开始时失去 1 点生命值并抽 1 张牌。
       upgrade_description: 回合开始时失去 1 点生命值并抽 1 张牌。固有。
+    Hellraiser:
+      name: Hellraiser
+      description: 每当你抽到一张名称包含“Strike”的牌时，自动对随机敌人打出它。
+      upgrade_description: 每当你抽到一张名称包含“Strike”的牌时，自动对随机敌人打出它。
     BurningPact:
       name: 燃烧契约
       description: 消耗 1 张牌。抽 {draw} 张牌。
@@ -1941,6 +1945,9 @@ powers:
   MetallicizePower:
     name: 金属化
     description: 回合结束时获得 {amount} 点格挡。
+  HellraiserPower:
+    name: Hellraiser
+    description: 每当你抽到一张名称包含“Strike”的牌时，自动对随机敌人打出它。
   ThieveryPower:
     name: 偷窃
     description: 攻击时偷取 {amount} 金币。死亡时追回。
