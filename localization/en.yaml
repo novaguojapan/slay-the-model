@@ -853,6 +853,10 @@ cards:
       name: Brutality
       description: At the start of your turn, lose 1 HP and draw 1 card.
       upgrade_description: At the start of your turn, lose 1 HP and draw 1 card. Innate.
+    Hellraiser:
+      name: Hellraiser
+      description: Whenever you draw a card containing “Strike” it is played against a random enemy.
+      upgrade_description: Whenever you draw a card containing “Strike” it is played against a random enemy.
     BurningPact:
       name: Burning Pact
       description: Exhaust 1 card. Draw {draw} cards.
@@ -1976,6 +1980,9 @@ powers:
   MetallicizePower:
     name: Metallicize
     description: At the end of your turn, gain {amount} Block.
+  HellraiserPower:
+    name: Hellraiser
+    description: Whenever you draw a card containing “Strike” it is played against a random enemy.
   ThieveryPower:
     name: Thievery
     description: Steals {amount} gold when attacking. Gold returned on death.

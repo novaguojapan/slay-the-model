@@ -28,6 +28,7 @@ from powers.definitions.pen_nib import PenNibPower
 from powers.definitions.barricade import BarricadePower
 from powers.definitions.berserk import BerserkPower
 from powers.definitions.brutality import BrutalityPower
+from powers.definitions.hellraiser import HellraiserPower
 from powers.definitions.combust import CombustPower
 from powers.definitions.corruption import CorruptionPower
 from powers.definitions.dark_embrace import DarkEmbracePower
@@ -93,6 +94,7 @@ __all__ = [
     "BarricadePower",
     "BerserkPower",
     "BrutalityPower",
+    "HellraiserPower",
     "CombustPower",
     "CorruptionPower",
     "DarkEmbracePower",
